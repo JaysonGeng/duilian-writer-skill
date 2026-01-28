@@ -20,6 +20,19 @@
 - 默认：`~/.codex/skills/duilian-writer`
 - 或：`$CODEX_HOME/skills/duilian-writer`
 
+### 推荐：让你的 CLI 工具代劳
+
+如果你在使用支持“让 AI 执行安装步骤”的 CLI（例如 Claude Code、Codex CLI 等），可以直接把下面这段提示词发给它，让它自动完成 clone 与放置路径：
+
+```text
+请帮我安装一个 Codex Skill（对联写作 duilian-writer）。
+
+仓库地址：https://github.com/JaysonGeng/duilian-writer-skill.git
+
+请将其克隆到 ~/.codex/skills/duilian-writer（如果我本机使用的是其它 skills 目录，也请按我的环境自动识别/询问我确认）。
+完成后请确认 SKILL.md 存在且能被识别加载，并给我一个验证方法（例如如何触发该 skill 写一副对联）。
+```
+
 示例（SSH）：
 
 ```bash

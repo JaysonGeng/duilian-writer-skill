@@ -23,6 +23,19 @@ Clone (or copy) this repo into your Codex skills directory:
 - Default: `~/.codex/skills/duilian-writer`
 - Or: `$CODEX_HOME/skills/duilian-writer`
 
+### Recommended: ask your CLI agent to install it
+
+If you use an AI-powered CLI that can perform setup steps for you (e.g. Claude Code, Codex CLI), paste the prompt below and let it handle the clone + placement:
+
+```text
+Please install a Codex Skill named "duilian-writer" (Chinese couplet writing).
+
+Repo URL: https://github.com/JaysonGeng/duilian-writer-skill.git
+
+Clone it into ~/.codex/skills/duilian-writer (if my machine uses a different skills directory, detect it or ask me to confirm).
+After that, verify that SKILL.md exists and is discoverable/loaded, and tell me how to validate (e.g. a short prompt to trigger the skill).
+```
+
 Example (SSH):
 
 ```bash
@@ -73,4 +86,3 @@ python scripts/pingze_check.py "上联" "下联"
 ## License
 
 MIT. See `LICENSE`.
-
